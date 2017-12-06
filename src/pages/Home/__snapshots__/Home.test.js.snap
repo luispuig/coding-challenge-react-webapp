@@ -2,85 +2,100 @@
 
 exports[`match on Shallow mode 1`] = `
 <div
-  className="container row"
+  className="_Home container"
 >
-  <div
-    className="col"
+  <TransitionGroup
+    appear={true}
+    childFactory={[Function]}
+    className="row"
+    component="div"
   >
-    <City
-      id={1}
-      name="City Name"
-      state="request"
-      temperatures={Array []}
-    />
-  </div>
-  <div
-    className="col"
-  >
-    <City
-      id={1}
-      name="City Name"
-      state="success"
-      temperature={25}
-      temperatures={
-        Array [
-          Object {
-            "date": 2017-12-06T10:57:16.462Z,
-            "id": 3936456,
-            "temperature": 15.45,
-          },
-          Object {
-            "date": 2017-12-06T10:57:16.449Z,
-            "id": 3448439,
-            "temperature": 22.06,
-          },
-          Object {
-            "date": 2017-12-06T10:57:16.438Z,
-            "id": 3871336,
-            "temperature": 12,
-          },
-        ]
-      }
-    />
-  </div>
-  <div
-    className="col"
-  >
-    <City
-      id={1}
-      name="City Name"
-      state="fail"
-      temperatures={Array []}
-    />
-  </div>
-  <div
-    className="col"
-  >
-    <City
-      error="error message"
-      id={1}
-      name="City Name"
-      state="fail"
-      temperatures={
-        Array [
-          Object {
-            "date": 2017-12-06T10:57:16.462Z,
-            "id": 3936456,
-            "temperature": 15.45,
-          },
-          Object {
-            "date": 2017-12-06T10:57:16.449Z,
-            "id": 3448439,
-            "temperature": 22.06,
-          },
-          Object {
-            "date": 2017-12-06T10:57:16.438Z,
-            "id": 3871336,
-            "temperature": 12,
-          },
-        ]
-      }
-    />
-  </div>
+    <CityEffect>
+      <div
+        className="col"
+      >
+        <City
+          id={1}
+          name="City Name"
+          state="request"
+          temperatures={Array []}
+        />
+      </div>
+    </CityEffect>
+    <CityEffect>
+      <div
+        className="col"
+      >
+        <City
+          id={1}
+          name="City Name"
+          state="success"
+          temperature={25}
+          temperatures={
+            Array [
+              Object {
+                "date": 2017-12-06T10:57:16.462Z,
+                "id": 3936456,
+                "temperature": 15.45,
+              },
+              Object {
+                "date": 2017-12-06T10:57:16.449Z,
+                "id": 3448439,
+                "temperature": 22.06,
+              },
+              Object {
+                "date": 2017-12-06T10:57:16.438Z,
+                "id": 3871336,
+                "temperature": 12,
+              },
+            ]
+          }
+        />
+      </div>
+    </CityEffect>
+    <CityEffect>
+      <div
+        className="col"
+      >
+        <City
+          id={1}
+          name="City Name"
+          state="fail"
+          temperatures={Array []}
+        />
+      </div>
+    </CityEffect>
+    <CityEffect>
+      <div
+        className="col"
+      >
+        <City
+          error="error message"
+          id={1}
+          name="City Name"
+          state="fail"
+          temperatures={
+            Array [
+              Object {
+                "date": 2017-12-06T10:57:16.462Z,
+                "id": 3936456,
+                "temperature": 15.45,
+              },
+              Object {
+                "date": 2017-12-06T10:57:16.449Z,
+                "id": 3448439,
+                "temperature": 22.06,
+              },
+              Object {
+                "date": 2017-12-06T10:57:16.438Z,
+                "id": 3871336,
+                "temperature": 12,
+              },
+            ]
+          }
+        />
+      </div>
+    </CityEffect>
+  </TransitionGroup>
 </div>
 `;

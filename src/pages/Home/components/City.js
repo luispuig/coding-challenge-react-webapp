@@ -6,7 +6,7 @@ import "react-activity/lib/Spinner/Spinner.css";
 
 import "./City.css";
 
-type Temperature = {
+type _Temperature = {
   id: number,
   date: Date,
   temperature: number
