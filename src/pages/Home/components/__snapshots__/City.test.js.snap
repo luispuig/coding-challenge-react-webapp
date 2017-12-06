@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match on Shallow mode for ERROR WITH MESSAGE 1`] = `
+<div
+  className="_City card elevation-1 elevation-hover"
+>
+  <div
+    className="card-body card-img-top bg_color_main _CardBody"
+  >
+    <div
+      className="frame-temperature"
+    >
+      <div
+        className="temperature elevation-2 text_color_dark"
+      >
+        <div
+          className="error"
+        >
+          X
+        </div>
+      </div>
+    </div>
+    <div
+      className="card-title"
+    >
+      CityName
+    </div>
+  </div>
+  <div
+    className="list-group list-group-flush list-temperatures"
+  >
+    <li
+      className="list-group-item error"
+    >
+      Error message
+    </li>
+  </div>
+</div>
+`;
+
+exports[`match on Shallow mode for ERROR WITHOUT MESSAGE 1`] = `
+<div
+  className="_City card elevation-1 elevation-hover"
+>
+  <div
+    className="card-body card-img-top bg_color_main _CardBody"
+  >
+    <div
+      className="frame-temperature"
+    >
+      <div
+        className="temperature elevation-2 text_color_dark"
+      >
+        <div
+          className="error"
+        >
+          X
+        </div>
+      </div>
+    </div>
+    <div
+      className="card-title"
+    >
+      CityName
+    </div>
+  </div>
+  <div
+    className="list-group list-group-flush list-temperatures"
+  />
+</div>
+`;
+
+exports[`match on Shallow mode for NO STATE 1`] = `
+<div
+  className="_City card elevation-1 elevation-hover"
+>
+  <div
+    className="card-body card-img-top bg_color_main _CardBody"
+  >
+    <div
+      className="frame-temperature"
+    >
+      <div
+        className="temperature elevation-2 text_color_dark"
+      />
+    </div>
+    <div
+      className="card-title"
+    >
+      CityName
+    </div>
+  </div>
+  <div
+    className="list-group list-group-flush list-temperatures"
+  />
+</div>
+`;
+
+exports[`match on Shallow mode for REQUEST 1`] = `
+<div
+  className="_City card elevation-1 elevation-hover"
+>
+  <div
+    className="card-body card-img-top bg_color_main _CardBody"
+  >
+    <div
+      className="frame-temperature"
+    >
+      <div
+        className="temperature elevation-2 text_color_dark"
+      >
+        <Spinner
+          animationDuration={0.6}
+          speed={1}
+        />
+      </div>
+    </div>
+    <div
+      className="card-title"
+    >
+      CityName
+    </div>
+  </div>
+  <div
+    className="list-group list-group-flush list-temperatures"
+  />
+</div>
+`;
+
+exports[`match on Shallow mode for SUCCESS 1`] = `
+<div
+  className="_City card elevation-1 elevation-hover"
+>
+  <div
+    className="card-body card-img-top bg_color_main _CardBody"
+  >
+    <div
+      className="frame-temperature"
+    >
+      <div
+        className="temperature elevation-2 text_color_dark"
+      >
+        <div>
+          20
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card-title"
+    >
+      CityName
+    </div>
+  </div>
+  <div
+    className="list-group list-group-flush list-temperatures"
+  />
+</div>
+`;
+
+exports[`match on Shallow mode for SUCCESS. temperatire undefined 1`] = `
+<div
+  className="_City card elevation-1 elevation-hover"
+>
+  <div
+    className="card-body card-img-top bg_color_main _CardBody"
+  >
+    <div
+      className="frame-temperature"
+    >
+      <div
+        className="temperature elevation-2 text_color_dark"
+      >
+        <div>
+          20
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card-title"
+    >
+      CityName
+    </div>
+  </div>
+  <div
+    className="list-group list-group-flush list-temperatures"
+  />
+</div>
+`;

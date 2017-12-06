@@ -1,7 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`match on Shallow mode 1`] = `
-<div>
-  Home Component!
+<div
+  className="container row"
+>
+  <div
+    className="col"
+  >
+    <City
+      id={1}
+      name="City Name"
+      state="request"
+    />
+  </div>
+  <div
+    className="col"
+  >
+    <City
+      id={1}
+      name="City Name"
+      state="success"
+      temperature={25}
+    />
+  </div>
+  <div
+    className="col"
+  >
+    <City
+      id={1}
+      name="City Name"
+      state="fail"
+    />
+  </div>
+  <div
+    className="col"
+  >
+    <City
+      error="error message"
+      id={1}
+      name="City Name"
+      state="fail"
+    />
+  </div>
 </div>
 `;

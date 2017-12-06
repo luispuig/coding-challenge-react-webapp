@@ -1,0 +1,30 @@
+._City { margin-top: 65px}
+
+._City ._CardBody {
+	min-height: 65px;
+	color: #FFFFFF;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+._City .frame-temperature {
+	text-align: center;
+	margin-top: -50px;
+	margin-bottom: 10px;
+}
+._City .temperature {
+	background: #FFFFFF;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	line-height: 100px;
+	font-size: 28px;
+	font-weight: 200;
+}
+
+._City .temperature .unit { font-size: 50% }
+
+._City .error { color: darkred }
