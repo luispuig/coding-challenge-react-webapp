@@ -2,6 +2,7 @@
   "name": "altran",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -11,6 +12,55 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-coverage": "react-scripts test --env=jsdom --coverage",
+    "flow-coverage": "flow-coverage-report"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.8.1",
+    "eslint-config-react-app": "^0.5.2",
+    "eslint-plugin-flowtype": "^2.21.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jest": "^19.0.1",
+    "eslint-plugin-jsx": "0.0.2",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "flow-bin": "^0.60.0",
+    "flow-coverage-report": "^0.4.0"
+  },
+  "flow-coverage-report": {
+    "includeGlob": [
+      "src/**/*.js",
+      "src/**/*.jsx"
+    ],
+    "excludeGlob": [
+      "node_module/*",
+      "src/**/*.test.js",
+      "src/index.js",
+      "src/registerServiceWorker.js",
+      "src/redux/store.js",
+      "src/redux/reducers.js"
+    ],
+    "flowCommandPath": "./node_modules/flow-bin/vendor/flow",
+    "type": [
+      "text",
+      "html",
+      "json"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/",
+      "!src/registerServiceWorker.js",
+      "!src/index.js",
+      "!src/redux/store.js",
+      "!src/redux/reducers.js"
+    ]
   }
 }
