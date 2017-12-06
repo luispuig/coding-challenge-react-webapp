@@ -1,21 +1,42 @@
+// @flow
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import './App.css';
 
-class App extends Component {
+type _Props = {};
+
+class App extends Component<_Props> {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router basename="/">
+        <div>
+          <header>
+            <RouteLink to="/"      activeOnlyWhenExact={true} label="Home"/>
+            <RouteLink to="/about" activeOnlyWhenExact={true} label="About"/>
+          </header>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </div>
+      </Router>
     );
   }
 }
+
+type RouteLink_Props = {
+  label: string,
+  to: string,
+  activeOnlyWhenExact?: boolean,
+}
+
+
+const RouteLink = ({ label, to, activeOnlyWhenExact }:RouteLink_Props) => (
+    <Route path={to} exact={activeOnlyWhenExact} children={({ match }:{ match?:boolean }) => (
+          <Link className='nav-link' to={to}>{label}</Link>
+    )}/>
+);
+
 
 export default App;

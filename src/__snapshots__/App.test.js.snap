@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match on Shallow mode 1`] = `
+<BrowserRouter
+  basename="/"
+>
+  <div>
+    <header>
+      <RouteLink
+        activeOnlyWhenExact={true}
+        label="Home"
+        to="/"
+      />
+      <RouteLink
+        activeOnlyWhenExact={true}
+        label="About"
+        to="/about"
+      />
+    </header>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/about"
+    />
+  </div>
+</BrowserRouter>
+`;
