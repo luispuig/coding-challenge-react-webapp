@@ -1,0 +1,51 @@
+body { font-weight: 200 !important; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 300 !important;}
+
+
+#main {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.elevation-1 {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border: none !important;
+}
+
+.elevation-1.elevation-hover:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border: none !important;
+}
+
+.elevation-2 {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border: none !important;
+}
+
+.elevation-3 {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border: none !important;
+}
+
+.elevation-4 {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border: none !important;
+}
+
+.elevation-5 {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	border: none !important;
+}
+
+.bg-primary {
+	background-color: #42a5f5 !important;
+}
+
+.bg_color_main { background: #42a5f5 !important; }
+.bg_color_light { background: #80d6ff !important;  }
+.bg_color_dark { background: #0077c2 !important;   }
+
+.text_color_main   { color: #42a5f5 !important;}
+.text_color_light { color: #80d6ff !important;}
+.text_color_dark { color: #0077c2 !important;}
