@@ -11,6 +11,7 @@ exports[`match on Shallow mode 1`] = `
       id={1}
       name="City Name"
       state="request"
+      temperatures={Array []}
     />
   </div>
   <div
@@ -21,6 +22,25 @@ exports[`match on Shallow mode 1`] = `
       name="City Name"
       state="success"
       temperature={25}
+      temperatures={
+        Array [
+          Object {
+            "date": 2017-12-06T10:57:16.462Z,
+            "id": 3936456,
+            "temperature": 15.45,
+          },
+          Object {
+            "date": 2017-12-06T10:57:16.449Z,
+            "id": 3448439,
+            "temperature": 22.06,
+          },
+          Object {
+            "date": 2017-12-06T10:57:16.438Z,
+            "id": 3871336,
+            "temperature": 12,
+          },
+        ]
+      }
     />
   </div>
   <div
@@ -30,6 +50,7 @@ exports[`match on Shallow mode 1`] = `
       id={1}
       name="City Name"
       state="fail"
+      temperatures={Array []}
     />
   </div>
   <div
@@ -40,6 +61,25 @@ exports[`match on Shallow mode 1`] = `
       id={1}
       name="City Name"
       state="fail"
+      temperatures={
+        Array [
+          Object {
+            "date": 2017-12-06T10:57:16.462Z,
+            "id": 3936456,
+            "temperature": 15.45,
+          },
+          Object {
+            "date": 2017-12-06T10:57:16.449Z,
+            "id": 3448439,
+            "temperature": 22.06,
+          },
+          Object {
+            "date": 2017-12-06T10:57:16.438Z,
+            "id": 3871336,
+            "temperature": 12,
+          },
+        ]
+      }
     />
   </div>
 </div>

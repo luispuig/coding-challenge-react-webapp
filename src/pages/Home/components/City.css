@@ -27,4 +27,8 @@
 
 ._City .temperature .unit { font-size: 50% }
 
-._City .error { color: darkred }
+._City .error { color: darkred; }
+._City .error.list-group-item { background: #FCEBEB}
+._City .list-temperatures { font-size: 12px; word-wrap: normal}
+._City .list-temperatures .unit { font-size: 80% }
+

@@ -34,6 +34,78 @@ exports[`match on Shallow mode for ERROR WITH MESSAGE 1`] = `
     >
       Error message
     </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          15
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          22
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          12
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
   </div>
 </div>
 `;
@@ -66,7 +138,80 @@ exports[`match on Shallow mode for ERROR WITHOUT MESSAGE 1`] = `
   </div>
   <div
     className="list-group list-group-flush list-temperatures"
-  />
+  >
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          15
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          22
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          12
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+  </div>
 </div>
 `;
 
@@ -92,7 +237,80 @@ exports[`match on Shallow mode for NO STATE 1`] = `
   </div>
   <div
     className="list-group list-group-flush list-temperatures"
-  />
+  >
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          15
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          22
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          12
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+  </div>
 </div>
 `;
 
@@ -123,7 +341,80 @@ exports[`match on Shallow mode for REQUEST 1`] = `
   </div>
   <div
     className="list-group list-group-flush list-temperatures"
-  />
+  >
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          15
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          22
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          12
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+  </div>
 </div>
 `;
 
@@ -159,7 +450,80 @@ exports[`match on Shallow mode for SUCCESS 1`] = `
   </div>
   <div
     className="list-group list-group-flush list-temperatures"
-  />
+  >
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          15
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          22
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          12
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+  </div>
 </div>
 `;
 
@@ -175,17 +539,7 @@ exports[`match on Shallow mode for SUCCESS. temperatire undefined 1`] = `
     >
       <div
         className="temperature elevation-2 text_color_dark"
-      >
-        <div>
-          20
-           
-          <span
-            className="unit"
-          >
-            ºC
-          </span>
-        </div>
-      </div>
+      />
     </div>
     <div
       className="card-title"
@@ -195,6 +549,79 @@ exports[`match on Shallow mode for SUCCESS. temperatire undefined 1`] = `
   </div>
   <div
     className="list-group list-group-flush list-temperatures"
-  />
+  >
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          15
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          22
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list-group-item"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-7 col-md-8"
+        >
+          06/11/2017 11:57
+        </div>
+        <div
+          className="col-5 col-md-4 text-right"
+        >
+          12
+           
+          <span
+            className="unit"
+          >
+            ºC
+          </span>
+        </div>
+      </div>
+    </li>
+  </div>
 </div>
 `;
