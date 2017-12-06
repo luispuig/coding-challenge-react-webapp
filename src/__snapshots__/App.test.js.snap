@@ -5,27 +5,51 @@ exports[`match on Shallow mode 1`] = `
   basename="/"
 >
   <div>
-    <header>
-      <RouteLink
-        activeOnlyWhenExact={true}
-        label="Home"
-        to="/"
+    <nav
+      className="bg_color_main navbar navbar-expand-md navbar-dark"
+    >
+      <div
+        className="container"
+      >
+        <a
+          className="NavbarBrand"
+        >
+          RectWeather
+        </a>
+        <div
+          className="collapse show navbar-collapse"
+        >
+          <ul
+            className="mr-auto navbar-nav"
+          >
+            <RouteLink
+              activeOnlyWhenExact={true}
+              label="Home"
+              to="/"
+            />
+            <RouteLink
+              activeOnlyWhenExact={true}
+              label="About"
+              to="/about"
+            />
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      className="container"
+      id="main"
+    >
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
       />
-      <RouteLink
-        activeOnlyWhenExact={true}
-        label="About"
-        to="/about"
+      <Route
+        component={[Function]}
+        path="/about"
       />
-    </header>
-    <Route
-      component={[Function]}
-      exact={true}
-      path="/"
-    />
-    <Route
-      component={[Function]}
-      path="/about"
-    />
+    </div>
   </div>
 </BrowserRouter>
 `;
