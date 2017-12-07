@@ -19,15 +19,28 @@ type _Props = {
   cityUpdateAll: () => void
 }
 
+const TICTIMER = 3 * 60 * 1000; // 3 minutes = 3 * 60 * 1000
 
 class Home extends React.Component<_Props> {
+
+  timer:number;
 
   componentDidMount() {
     // Start Fetching Data
     this.props.cityUpdateAll();
 
-    //TODO run timer
-  };
+    // Create Timer
+    this.timer = setInterval(() => {
+      this.props.cityUpdateAll();
+    }, TICTIMER);
+
+  }
+
+  componentWillUnmount() {
+    // Destroy timer
+    clearInterval(this.timer);
+    this.timer = 0;
+  }
 
   // Aux function to filter temperatures by city_id
   _filterCityTemperatures = id => this.props.cities_temperatures.filter( item => item.id === id) ;

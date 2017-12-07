@@ -42,12 +42,26 @@ it('match on Shallow mode', () => {
   expect(tree).toMatchSnapshot();
 });
 
+
 it('should start fetching', () => {
+  jest.useFakeTimers();
 
   const cityUpdateAll_Mock = jest.fn();
-  mount(<Provider store={store}><Home cityUpdateAll={cityUpdateAll_Mock} /></Provider>, store);
+
+  const component = mount(<Provider store={store}><Home cityUpdateAll={cityUpdateAll_Mock} /></Provider>, store);
 
   expect(cityUpdateAll_Mock.mock.calls.length).toBe(1); // Start Fetching con ComponentDidMount();
 
+  // Run timer
+  jest.runOnlyPendingTimers();
+  expect(cityUpdateAll_Mock.mock.calls.length).toBe(2); // Fetching on tic timer();
 
+  // unmount component
+  component.unmount();
+
+  // Run timer
+  jest.runOnlyPendingTimers();
+  expect(cityUpdateAll_Mock.mock.calls.length).toBe(2); // NO Fetching on tic timer();
+
+  jest.clearAllTimers();
 });
