@@ -1,11 +1,13 @@
 // @flow
 import React from 'react'
+import { connect } from "react-redux";
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import openWeather  from "../../services/openWeather";
 
 import City from './components/City';
 import "./Home.css";
 
+import type { Connector } from "react-redux"
 type _Props = {};
 type _State = {
   state: string,
@@ -29,6 +31,8 @@ class Home extends React.Component<_Props, _State> {
   };
 
   componentDidMount() {
+    console.log(this.props);
+
     openWeather.getTempByCityId( 3936456 ).then(
         (temperature:number) => {
           this.setState({ state: 'success', temperature });
@@ -83,4 +87,15 @@ const CityEffect = ({ children, ...props }:CityEffect_Props) => (
     </CSSTransition>
 );
 
-export default Home
+
+const mapStateToProps = ({cities, cities_temperatures}:_State):MapStateToProps => ({
+  cities,
+  cities_temperatures
+});
+
+
+const connector:Connector<{}, _Props> = connect (
+    mapStateToProps
+);
+
+export default connector(Home);
