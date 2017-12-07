@@ -1,75 +1,52 @@
 // @flow
 import React from 'react'
 import { connect } from "react-redux";
+import {cityUpdateAll} from '../../redux/cities/actions';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import openWeather  from "../../services/openWeather";
 
 import City from './components/City';
 import "./Home.css";
 
+import type { _Temperature } from '../../redux/cities_temperatures/types';
+import type { _City } from '../../redux/cities/types';
+import type { _State } from '../../redux/types';
 import type { Connector } from "react-redux"
-type _Props = {};
-type _State = {
-  state: string,
-  temperature: number,
-  error: number
-};
 
-const  temperatures = [
-  {id:3936456,  temperature:15.45,  date: new Date('2017-12-06T10:57:16.462Z')},
-  {id:3448439,  temperature:22.06,  date: new Date('2017-12-06T10:57:16.449Z')},
-  {id:3871336,  temperature:12,     date:new Date('2017-12-06T10:57:16.438Z')}
-];
+type _Props = {
+  actions: any,
+  cities: Array<_City>,
+  citiesTemperatures: Array<_Temperature>,
+  cityUpdateAll: () => void
+}
 
 
-class Home extends React.Component<_Props, _State> {
-
-  state = {
-    state: 'request',
-    temperature: undefined,
-    error: undefined
-  };
+class Home extends React.Component<_Props> {
 
   componentDidMount() {
-    console.log(this.props);
+    // Start Fetching Data
+    this.props.cityUpdateAll();
 
-    openWeather.getTempByCityId( 3936456 ).then(
-        (temperature:number) => {
-          this.setState({ state: 'success', temperature });
-        },
-        (error:{ message:string }) => {
-          console.log(error.message);
-        }
-    );
+    //TODO run timer
   }
 
   render() {
-    const { state, temperature, error } = this.state;
+    const { cities } = this.props;
     return (
-        <div className="_Home container">
+        <div className="container">
           <TransitionGroup className='row' appear={true}>
-            <CityEffect>
-              <div className="col">
-                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={[]}/>
-              </div>
-            </CityEffect>
-            <CityEffect>
-              <div className="col">
-                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={temperatures}/>
-              </div>
-            </CityEffect>
-            <CityEffect>
-              <div className="col">
-                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={[]}/>
-              </div>
-            </CityEffect>
-            <CityEffect>
-              <div className="col">
-                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={temperatures}/>
-              </div>
-            </CityEffect>
+            {
+              cities.map( city =>
+                  <CityEffect key={city.id}>
+                    <div className="col">
+                      <City {...city} temperatures={[]} />
+                    </div>
+                  </CityEffect>
+              )
+            }
           </TransitionGroup>
         </div>
+
     );
   }
 }
@@ -88,14 +65,34 @@ const CityEffect = ({ children, ...props }:CityEffect_Props) => (
 );
 
 
-const mapStateToProps = ({cities, cities_temperatures}:_State):MapStateToProps => ({
+declare type MapStateToProps<SP: Object> =
+    () => (() => SP) | SP;
+
+declare type MapDispatchToProps<DP: Object> =
+    (() => DP) | DP;
+
+/*
+declare function connect<SP, DP>(
+  mapStateToProps: MapStateToProps<SP>,
+  mapDispatchToProps: MapDispatchToProps<DP>,
+): void;
+*/
+
+const mapStateToProps = ({cities, citiesTemperatures}:_State):MapStateToProps => ({
   cities,
-  cities_temperatures
+  citiesTemperatures
 });
 
+const mapDispatchToProps = (dispatch:any => void, props:_Props):MapDispatchToProps => {
+  return ({
+    cityUpdateAll: () => dispatch( cityUpdateAll() ),
+    ...props // Allow overwriting for testing porpuse
+  })
+};
 
 const connector:Connector<{}, _Props> = connect (
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 );
 
 export default connector(Home);

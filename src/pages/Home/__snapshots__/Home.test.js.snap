@@ -1,107 +1,543 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`match on Shallow mode 1`] = `
-<div
-  className="_Home container"
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getAction": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "isActionDispatched": [Function],
+      "isActionTypeDispatched": [Function],
+      "subscribe": [Function],
+    }
+  }
 >
-  <TransitionGroup
-    appear={true}
-    childFactory={[Function]}
-    className="row"
-    component="div"
-  >
-    <CityEffect>
+  <Connect(Home)>
+    <Home
+      cities={
+        Array [
+          Object {
+            "error": undefined,
+            "id": 3871336,
+            "name": "Santiago",
+            "state": "request",
+            "temperature": 0,
+          },
+          Object {
+            "error": undefined,
+            "id": 3435910,
+            "name": "Buenos Aires",
+            "state": "request",
+            "temperature": 0,
+          },
+          Object {
+            "error": undefined,
+            "id": 3936456,
+            "name": "Lima",
+            "state": "request",
+            "temperature": 0,
+          },
+          Object {
+            "error": undefined,
+            "id": 3448439,
+            "name": "Sao Paulo",
+            "state": "request",
+            "temperature": 0,
+          },
+        ]
+      }
+      citiesTemperatures={
+        Array [
+          Object {
+            "date": 2017-12-06T14:14:58.080Z,
+            "id": 3871336,
+            "temperature": 25,
+          },
+          Object {
+            "date": 2017-12-07T14:14:58.080Z,
+            "id": 3435910,
+            "temperature": 26,
+          },
+          Object {
+            "date": 2017-12-08T14:14:58.080Z,
+            "id": 3936456,
+            "temperature": 27,
+          },
+          Object {
+            "date": 2017-12-09T14:14:58.080Z,
+            "id": 3448439,
+            "temperature": 28,
+          },
+        ]
+      }
+      cityUpdateAll={[Function]}
+    >
       <div
-        className="col"
+        className="container"
       >
-        <City
-          error={undefined}
-          id={1}
-          name="City Name"
-          state="request"
-          temperature={undefined}
-          temperatures={Array []}
-        />
+        <TransitionGroup
+          appear={true}
+          childFactory={[Function]}
+          className="row"
+          component="div"
+        >
+          <div
+            className="row"
+          >
+            <CityEffect
+              appear={true}
+              in={true}
+              key=".$3871336"
+              onExited={[Function]}
+            >
+              <CSSTransition
+                appear={true}
+                classNames="city"
+                in={true}
+                onExited={[Function]}
+                timeout={5000}
+              >
+                <Transition
+                  appear={true}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={5000}
+                  unmountOnExit={false}
+                >
+                  <div
+                    className="col"
+                  >
+                    <City
+                      id={3871336}
+                      name="Santiago"
+                      state="request"
+                      temperature={0}
+                      temperatures={Array []}
+                    >
+                      <div
+                        className="_City card elevation-1 elevation-hover"
+                      >
+                        <div
+                          className="card-body card-img-top bg_color_main _CardBody"
+                        >
+                          <div
+                            className="frame-temperature"
+                          >
+                            <div
+                              className="temperature elevation-2 text_color_dark"
+                            >
+                              <Spinner
+                                animationDuration={0.6}
+                                speed={1}
+                              >
+                                <div
+                                  className="rai-activity-indicator"
+                                  style={
+                                    Object {
+                                      "display": "inline-block",
+                                      "fontSize": "16px",
+                                      "lineHeight": "0",
+                                    }
+                                  }
+                                >
+                                  <Spinner
+                                    animationDuration={0.6}
+                                    getBorderStyle={[Function]}
+                                    getFillStyle={[Function]}
+                                    speed={1}
+                                    style={
+                                      Object {
+                                        "animationDuration": "0.6s",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="rai-spinner"
+                                      style={
+                                        Object {
+                                          "animationDuration": "0.6s",
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="rai-spinner-outer"
+                                        style={Object {}}
+                                      />
+                                      <div
+                                        className="rai-spinner-inner"
+                                        style={Object {}}
+                                      />
+                                    </div>
+                                  </Spinner>
+                                </div>
+                              </Spinner>
+                            </div>
+                          </div>
+                          <div
+                            className="card-title"
+                          >
+                            Santiago
+                          </div>
+                        </div>
+                        <div
+                          className="list-group list-group-flush list-temperatures"
+                        />
+                      </div>
+                    </City>
+                  </div>
+                </Transition>
+              </CSSTransition>
+            </CityEffect>
+            <CityEffect
+              appear={true}
+              in={true}
+              key=".$3435910"
+              onExited={[Function]}
+            >
+              <CSSTransition
+                appear={true}
+                classNames="city"
+                in={true}
+                onExited={[Function]}
+                timeout={5000}
+              >
+                <Transition
+                  appear={true}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={5000}
+                  unmountOnExit={false}
+                >
+                  <div
+                    className="col"
+                  >
+                    <City
+                      id={3435910}
+                      name="Buenos Aires"
+                      state="request"
+                      temperature={0}
+                      temperatures={Array []}
+                    >
+                      <div
+                        className="_City card elevation-1 elevation-hover"
+                      >
+                        <div
+                          className="card-body card-img-top bg_color_main _CardBody"
+                        >
+                          <div
+                            className="frame-temperature"
+                          >
+                            <div
+                              className="temperature elevation-2 text_color_dark"
+                            >
+                              <Spinner
+                                animationDuration={0.6}
+                                speed={1}
+                              >
+                                <div
+                                  className="rai-activity-indicator"
+                                  style={
+                                    Object {
+                                      "display": "inline-block",
+                                      "fontSize": "16px",
+                                      "lineHeight": "0",
+                                    }
+                                  }
+                                >
+                                  <Spinner
+                                    animationDuration={0.6}
+                                    getBorderStyle={[Function]}
+                                    getFillStyle={[Function]}
+                                    speed={1}
+                                    style={
+                                      Object {
+                                        "animationDuration": "0.6s",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="rai-spinner"
+                                      style={
+                                        Object {
+                                          "animationDuration": "0.6s",
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="rai-spinner-outer"
+                                        style={Object {}}
+                                      />
+                                      <div
+                                        className="rai-spinner-inner"
+                                        style={Object {}}
+                                      />
+                                    </div>
+                                  </Spinner>
+                                </div>
+                              </Spinner>
+                            </div>
+                          </div>
+                          <div
+                            className="card-title"
+                          >
+                            Buenos Aires
+                          </div>
+                        </div>
+                        <div
+                          className="list-group list-group-flush list-temperatures"
+                        />
+                      </div>
+                    </City>
+                  </div>
+                </Transition>
+              </CSSTransition>
+            </CityEffect>
+            <CityEffect
+              appear={true}
+              in={true}
+              key=".$3936456"
+              onExited={[Function]}
+            >
+              <CSSTransition
+                appear={true}
+                classNames="city"
+                in={true}
+                onExited={[Function]}
+                timeout={5000}
+              >
+                <Transition
+                  appear={true}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={5000}
+                  unmountOnExit={false}
+                >
+                  <div
+                    className="col"
+                  >
+                    <City
+                      id={3936456}
+                      name="Lima"
+                      state="request"
+                      temperature={0}
+                      temperatures={Array []}
+                    >
+                      <div
+                        className="_City card elevation-1 elevation-hover"
+                      >
+                        <div
+                          className="card-body card-img-top bg_color_main _CardBody"
+                        >
+                          <div
+                            className="frame-temperature"
+                          >
+                            <div
+                              className="temperature elevation-2 text_color_dark"
+                            >
+                              <Spinner
+                                animationDuration={0.6}
+                                speed={1}
+                              >
+                                <div
+                                  className="rai-activity-indicator"
+                                  style={
+                                    Object {
+                                      "display": "inline-block",
+                                      "fontSize": "16px",
+                                      "lineHeight": "0",
+                                    }
+                                  }
+                                >
+                                  <Spinner
+                                    animationDuration={0.6}
+                                    getBorderStyle={[Function]}
+                                    getFillStyle={[Function]}
+                                    speed={1}
+                                    style={
+                                      Object {
+                                        "animationDuration": "0.6s",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="rai-spinner"
+                                      style={
+                                        Object {
+                                          "animationDuration": "0.6s",
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="rai-spinner-outer"
+                                        style={Object {}}
+                                      />
+                                      <div
+                                        className="rai-spinner-inner"
+                                        style={Object {}}
+                                      />
+                                    </div>
+                                  </Spinner>
+                                </div>
+                              </Spinner>
+                            </div>
+                          </div>
+                          <div
+                            className="card-title"
+                          >
+                            Lima
+                          </div>
+                        </div>
+                        <div
+                          className="list-group list-group-flush list-temperatures"
+                        />
+                      </div>
+                    </City>
+                  </div>
+                </Transition>
+              </CSSTransition>
+            </CityEffect>
+            <CityEffect
+              appear={true}
+              in={true}
+              key=".$3448439"
+              onExited={[Function]}
+            >
+              <CSSTransition
+                appear={true}
+                classNames="city"
+                in={true}
+                onExited={[Function]}
+                timeout={5000}
+              >
+                <Transition
+                  appear={true}
+                  enter={true}
+                  exit={true}
+                  in={true}
+                  mountOnEnter={false}
+                  onEnter={[Function]}
+                  onEntered={[Function]}
+                  onEntering={[Function]}
+                  onExit={[Function]}
+                  onExited={[Function]}
+                  onExiting={[Function]}
+                  timeout={5000}
+                  unmountOnExit={false}
+                >
+                  <div
+                    className="col"
+                  >
+                    <City
+                      id={3448439}
+                      name="Sao Paulo"
+                      state="request"
+                      temperature={0}
+                      temperatures={Array []}
+                    >
+                      <div
+                        className="_City card elevation-1 elevation-hover"
+                      >
+                        <div
+                          className="card-body card-img-top bg_color_main _CardBody"
+                        >
+                          <div
+                            className="frame-temperature"
+                          >
+                            <div
+                              className="temperature elevation-2 text_color_dark"
+                            >
+                              <Spinner
+                                animationDuration={0.6}
+                                speed={1}
+                              >
+                                <div
+                                  className="rai-activity-indicator"
+                                  style={
+                                    Object {
+                                      "display": "inline-block",
+                                      "fontSize": "16px",
+                                      "lineHeight": "0",
+                                    }
+                                  }
+                                >
+                                  <Spinner
+                                    animationDuration={0.6}
+                                    getBorderStyle={[Function]}
+                                    getFillStyle={[Function]}
+                                    speed={1}
+                                    style={
+                                      Object {
+                                        "animationDuration": "0.6s",
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      className="rai-spinner"
+                                      style={
+                                        Object {
+                                          "animationDuration": "0.6s",
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="rai-spinner-outer"
+                                        style={Object {}}
+                                      />
+                                      <div
+                                        className="rai-spinner-inner"
+                                        style={Object {}}
+                                      />
+                                    </div>
+                                  </Spinner>
+                                </div>
+                              </Spinner>
+                            </div>
+                          </div>
+                          <div
+                            className="card-title"
+                          >
+                            Sao Paulo
+                          </div>
+                        </div>
+                        <div
+                          className="list-group list-group-flush list-temperatures"
+                        />
+                      </div>
+                    </City>
+                  </div>
+                </Transition>
+              </CSSTransition>
+            </CityEffect>
+          </div>
+        </TransitionGroup>
       </div>
-    </CityEffect>
-    <CityEffect>
-      <div
-        className="col"
-      >
-        <City
-          error={undefined}
-          id={1}
-          name="City Name"
-          state="request"
-          temperature={undefined}
-          temperatures={
-            Array [
-              Object {
-                "date": 2017-12-06T10:57:16.462Z,
-                "id": 3936456,
-                "temperature": 15.45,
-              },
-              Object {
-                "date": 2017-12-06T10:57:16.449Z,
-                "id": 3448439,
-                "temperature": 22.06,
-              },
-              Object {
-                "date": 2017-12-06T10:57:16.438Z,
-                "id": 3871336,
-                "temperature": 12,
-              },
-            ]
-          }
-        />
-      </div>
-    </CityEffect>
-    <CityEffect>
-      <div
-        className="col"
-      >
-        <City
-          error={undefined}
-          id={1}
-          name="City Name"
-          state="request"
-          temperature={undefined}
-          temperatures={Array []}
-        />
-      </div>
-    </CityEffect>
-    <CityEffect>
-      <div
-        className="col"
-      >
-        <City
-          error={undefined}
-          id={1}
-          name="City Name"
-          state="request"
-          temperature={undefined}
-          temperatures={
-            Array [
-              Object {
-                "date": 2017-12-06T10:57:16.462Z,
-                "id": 3936456,
-                "temperature": 15.45,
-              },
-              Object {
-                "date": 2017-12-06T10:57:16.449Z,
-                "id": 3448439,
-                "temperature": 22.06,
-              },
-              Object {
-                "date": 2017-12-06T10:57:16.438Z,
-                "id": 3871336,
-                "temperature": 12,
-              },
-            ]
-          }
-        />
-      </div>
-    </CityEffect>
-  </TransitionGroup>
-</div>
+    </Home>
+  </Connect(Home)>
+</Provider>
 `;

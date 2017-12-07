@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Creates Action cityUpdate 1`] = `
+Array [
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3871336,
+      },
+      "type": "CITY_UPDATE__REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3871336,
+        "temperature": 25,
+      },
+      "type": "CITY_UPDATE__SUCCESS",
+    },
+  ],
+]
+`;
+
+exports[`Creates Action cityUpdate_Fail 1`] = `
+Object {
+  "payload": Object {
+    "error": "error message",
+    "id": 123,
+  },
+  "type": "CITY_UPDATE__FAIL",
+}
+`;
+
+exports[`Creates Action cityUpdate_Request 1`] = `
+Object {
+  "payload": Object {
+    "id": 123,
+  },
+  "type": "CITY_UPDATE__REQUEST",
+}
+`;
+
+exports[`Creates Action cityUpdate_Success 1`] = `
+Object {
+  "payload": Object {
+    "id": 123,
+    "temperature": 15,
+  },
+  "type": "CITY_UPDATE__SUCCESS",
+}
+`;
+
+exports[`Creates Action cityUpdate-ERROR 1`] = `
+Array [
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3871336,
+      },
+      "type": "CITY_UPDATE__REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "payload": Object {
+        "error": "error",
+        "id": 3871336,
+      },
+      "type": "CITY_UPDATE__FAIL",
+    },
+  ],
+]
+`;
+
+exports[`Creates Actions cityUpdateAll 1`] = `
+Array [
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3871336,
+      },
+      "type": "CITY_UPDATE__REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3435910,
+      },
+      "type": "CITY_UPDATE__REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3936456,
+      },
+      "type": "CITY_UPDATE__REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "payload": Object {
+        "id": 3448439,
+      },
+      "type": "CITY_UPDATE__REQUEST",
+    },
+  ],
+]
+`;

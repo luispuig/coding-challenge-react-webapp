@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer other action 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "id": 3871336,
+    "name": "Santiago",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3936456,
+    "name": "Lima",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3448439,
+    "name": "Sao Paulo",
+    "state": "request",
+    "temperature": 0,
+  },
+]
+`;
+
+exports[`Reducer other action: CITY_UPDATE__FAIL 1`] = `
+Array [
+  Object {
+    "error": "error message",
+    "id": 3871336,
+    "name": "Santiago",
+    "state": "fail",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3936456,
+    "name": "Lima",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3448439,
+    "name": "Sao Paulo",
+    "state": "request",
+    "temperature": 0,
+  },
+]
+`;
+
+exports[`Reducer other action: CITY_UPDATE__FAIL-undefined 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "id": 3871336,
+    "name": "Santiago",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3936456,
+    "name": "Lima",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3448439,
+    "name": "Sao Paulo",
+    "state": "request",
+    "temperature": 0,
+  },
+]
+`;
+
+exports[`Reducer other action: CITY_UPDATE__REQUEST 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "id": 3871336,
+    "name": "Santiago",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3936456,
+    "name": "Lima",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3448439,
+    "name": "Sao Paulo",
+    "state": "request",
+    "temperature": 0,
+  },
+]
+`;
+
+exports[`Reducer other action: CITY_UPDATE__SUCCESS 1`] = `
+Array [
+  Object {
+    "error": undefined,
+    "id": 3871336,
+    "name": "Santiago",
+    "state": "success",
+    "temperature": 25,
+  },
+  Object {
+    "error": undefined,
+    "id": 3435910,
+    "name": "Buenos Aires",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3936456,
+    "name": "Lima",
+    "state": "request",
+    "temperature": 0,
+  },
+  Object {
+    "error": undefined,
+    "id": 3448439,
+    "name": "Sao Paulo",
+    "state": "request",
+    "temperature": 0,
+  },
+]
+`;
