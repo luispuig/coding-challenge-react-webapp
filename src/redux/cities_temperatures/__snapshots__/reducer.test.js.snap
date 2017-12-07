@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducer other action 1`] = `Array []`;
+
+exports[`Reducer other action: CITY_TEMPERATURE__ADD 1`] = `
+Array [
+  Object {
+    "id": 3871336,
+    "temperature": 25,
+  },
+]
+`;

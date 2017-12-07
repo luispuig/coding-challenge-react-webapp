@@ -2,7 +2,7 @@
 
 exports[`match on Shallow mode 1`] = `
 <BrowserRouter
-  basename="/"
+  basename="/altran/app"
 >
   <div>
     <nav

@@ -4,22 +4,15 @@ import * as React from "react";
 import Spinner  from "react-activity/lib/Spinner/";
 import "react-activity/lib/Spinner/Spinner.css";
 
+import type { _Temperature } from '../../redux/city_temperatures/types';
+import type { _City } from '../../redux/cities/types';
+
 import "./City.css";
 
-type _Temperature = {
-  id: number,
-  date: Date,
-  temperature: number
-};
-
 type _Props = {
-  id: number,
-  name: string,
-  state: "request" | "success" | "fail",
-  temperature?: number,
-  error?: string,
+  ..._City,
   temperatures: Array<_Temperature>
-};
+}
 
 class City extends React.Component<_Props> {
 

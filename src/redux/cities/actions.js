@@ -1,6 +1,6 @@
 // @flow
-
 import openWeather from "../../services/openWeather";
+import { cityTemperature_Add }  from "../cities_temperatures/actions";
 
 import type { _RequestPayload, _SuccesPayload, _FailPayload } from "./types.js"
 import type { _State } from "../types.js"
@@ -38,6 +38,7 @@ export const cityUpdate = ( { id }:_RequestPayload, date:?Date = undefined ) => 
     return openWeather.getTempByCityId( id ).then(
         (temperature:number) => {
           dispatch( cityUpdate_Success  ( { id, temperature } ) );
+          dispatch( cityTemperature_Add ( { id, temperature, date } ) );
         },
         (error:{ message:string }) => {
           dispatch( cityUpdate_Fail( { id, error: error.message } ) ) }

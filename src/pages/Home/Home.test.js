@@ -21,7 +21,7 @@ const testState = {
     { id: 3936456, name: "Lima",          ...initialData },
     { id: 3448439, name: "Sao Paulo",     ...initialData }
   ],
-  citiesTemperatures: [
+  cities_temperatures: [
     { id:3871336, date: new Date('2017-12-06T14:14:58.080Z'), temperature: 25 },
     { id:3435910, date: new Date('2017-12-07T14:14:58.080Z'), temperature: 26 },
     { id:3936456, date: new Date('2017-12-08T14:14:58.080Z'), temperature: 27 },

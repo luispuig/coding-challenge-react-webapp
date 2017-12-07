@@ -23,7 +23,7 @@ const cities = [
 
 const testState = {
   cities,
-  citiesTemperatures: []
+  cities_temperatures: []
 };
 
 const store = createMockStore(testState);

@@ -19,6 +19,16 @@ Array [
       "type": "CITY_UPDATE__SUCCESS",
     },
   ],
+  Array [
+    Object {
+      "payload": Object {
+        "date": 2017-12-06T14:14:58.080Z,
+        "id": 3871336,
+        "temperature": 25,
+      },
+      "type": "CITY_TEMPERATURE__ADD",
+    },
+  ],
 ]
 `;
 
