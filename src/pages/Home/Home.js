@@ -1,11 +1,17 @@
 // @flow
 import React from 'react'
-import City from './components/City';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import openWeather  from "../../services/openWeather";
 
+import City from './components/City';
 import "./Home.css";
 
 type _Props = {};
+type _State = {
+  state: string,
+  temperature: number,
+  error: number
+};
 
 const  temperatures = [
   {id:3936456,  temperature:15.45,  date: new Date('2017-12-06T10:57:16.462Z')},
@@ -14,29 +20,48 @@ const  temperatures = [
 ];
 
 
-class Home extends React.Component<_Props> {
+class Home extends React.Component<_Props, _State> {
+
+  state = {
+    state: 'request',
+    temperature: undefined,
+    error: undefined
+  };
+
+  componentDidMount() {
+    openWeather.getTempByCityId( 3936456 ).then(
+        (temperature:number) => {
+          this.setState({ state: 'success', temperature });
+        },
+        (error:{ message:string }) => {
+          console.log(error.message);
+        }
+    );
+  }
+
   render() {
+    const { state, temperature, error } = this.state;
     return (
         <div className="_Home container">
           <TransitionGroup className='row' appear={true}>
             <CityEffect>
               <div className="col">
-                <City id={1} name="City Name" state="request" temperatures={[]}/>
+                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={[]}/>
               </div>
             </CityEffect>
             <CityEffect>
               <div className="col">
-                <City id={1} name="City Name" state="success" temperature={25} temperatures={temperatures}/>
+                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={temperatures}/>
               </div>
             </CityEffect>
             <CityEffect>
               <div className="col">
-                <City id={1} name="City Name" state="fail"  temperatures={[]}/>
+                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={[]}/>
               </div>
             </CityEffect>
             <CityEffect>
               <div className="col">
-                <City id={1} name="City Name" state="fail" error="error message" temperatures={temperatures}/>
+                <City id={1} name="City Name" state={state} temperature={temperature} error={error} temperatures={temperatures}/>
               </div>
             </CityEffect>
           </TransitionGroup>

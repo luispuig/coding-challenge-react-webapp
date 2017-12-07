@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loads data 1`] = `25`;
+
+exports[`Loads data error 1`] = `"Unable to fetch weather for that location"`;
+
+exports[`Loads data fail 1`] = `"error message"`;

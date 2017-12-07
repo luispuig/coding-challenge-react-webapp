@@ -15,9 +15,11 @@ exports[`match on Shallow mode 1`] = `
         className="col"
       >
         <City
+          error={undefined}
           id={1}
           name="City Name"
           state="request"
+          temperature={undefined}
           temperatures={Array []}
         />
       </div>
@@ -27,10 +29,11 @@ exports[`match on Shallow mode 1`] = `
         className="col"
       >
         <City
+          error={undefined}
           id={1}
           name="City Name"
-          state="success"
-          temperature={25}
+          state="request"
+          temperature={undefined}
           temperatures={
             Array [
               Object {
@@ -58,9 +61,11 @@ exports[`match on Shallow mode 1`] = `
         className="col"
       >
         <City
+          error={undefined}
           id={1}
           name="City Name"
-          state="fail"
+          state="request"
+          temperature={undefined}
           temperatures={Array []}
         />
       </div>
@@ -70,10 +75,11 @@ exports[`match on Shallow mode 1`] = `
         className="col"
       >
         <City
-          error="error message"
+          error={undefined}
           id={1}
           name="City Name"
-          state="fail"
+          state="request"
+          temperature={undefined}
           temperatures={
             Array [
               Object {
