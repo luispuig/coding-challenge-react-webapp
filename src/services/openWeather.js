@@ -1,5 +1,5 @@
 // @flow
-const OPEN_WEATHER_MAP_URL = "http://api.openweathermap.org/data/2.5/weather?appid=99cf78b8e2240a69ab073fd37c98cea7&units=metric";
+const OPEN_WEATHER_MAP_URL = "https://api.openweathermap.org/data/2.5/weather?appid=99cf78b8e2240a69ab073fd37c98cea7&units=metric";
 
 type _ApiData = {
   code: number,
