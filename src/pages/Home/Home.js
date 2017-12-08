@@ -48,7 +48,7 @@ class Home extends React.Component<_Props> {
   render() {
     const { cities } = this.props;
     return (
-        <div className="container">
+        <div className="_Home container">
           <TransitionGroup className='row' appear={true}>
             {
               cities.map( city =>
@@ -72,7 +72,7 @@ type CityEffect_Props = {
 const CityEffect = ({ children, ...props }:CityEffect_Props) => (
     <CSSTransition
         {...props}
-        timeout={5000}
+        timeout={15000}
         classNames="city"
     >
       {children}
