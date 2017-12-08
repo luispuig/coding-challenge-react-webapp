@@ -4,8 +4,8 @@ import * as React from "react";
 import Spinner  from "react-activity/lib/Spinner/";
 import "react-activity/lib/Spinner/Spinner.css";
 
-import type { _Temperature } from '../../redux/city_temperatures/types';
-import type { _City } from '../../redux/cities/types';
+import type { _City } from '../../../redux/cities/types';
+import type { _Temperature } from '../../../redux/cities_temperatures/types';
 
 import "./City.css";
 
