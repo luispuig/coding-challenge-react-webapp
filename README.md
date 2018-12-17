@@ -1,8 +1,6 @@
 # Webapp ReactJS challenge. Weather Webapp
 Webapp ReactJS Challenge made by Luis Puig
 
-Repository: https://github.com/luispuig/altran/
-
 App Online: https://luispuig.com/altran/app/
 
 Test coverage report (100%): https://luispuig.com/altran/test/
