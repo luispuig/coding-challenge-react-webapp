@@ -1,5 +1,5 @@
-# Altran Callenge. Weather Webapp
-Webapp ReactJS Test made by Luis Puig
+# Webapp ReactJS challenge. Weather Webapp
+Webapp ReactJS Challenge made by Luis Puig
 
 Repository: https://github.com/luispuig/altran/
 
