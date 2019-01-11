@@ -41,14 +41,14 @@ class City extends React.Component<_Props> {
   // Aux function to format date dd/MM/yyyy HH:mm
   // TODO IMPROVE Move function to utils file
   formatDate = (date: Date) => {
-    console.log(date);
     const dd = ("00" + date.getDate()).slice(-2);
     const mm = ("00" + (date.getMonth() + 1)).slice(-2);
     const yyyy = date.getFullYear();
     const _hh = ("00" + date.getHours()).slice(-2);
     const _mm = ("00" + date.getMinutes()).slice(-2);
+    const _ss = ("00" + date.getSeconds()).slice(-2);
 
-    return `${dd}/${mm}/${yyyy} ${_hh}:${_mm}`;
+    return `${dd}/${mm}/${yyyy} ${_hh}:${_mm}:${_ss}`;
   };
 
   render() {

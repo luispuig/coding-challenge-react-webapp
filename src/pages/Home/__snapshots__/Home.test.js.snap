@@ -75,7 +75,7 @@ exports[`match on Shallow mode 1`] = `
       cityUpdateAll={[Function]}
     >
       <div
-        className="container"
+        className="_Home container"
       >
         <TransitionGroup
           appear={true}
@@ -97,7 +97,7 @@ exports[`match on Shallow mode 1`] = `
                 classNames="city"
                 in={true}
                 onExited={[Function]}
-                timeout={5000}
+                timeout={15000}
               >
                 <Transition
                   appear={true}
@@ -111,7 +111,7 @@ exports[`match on Shallow mode 1`] = `
                   onExit={[Function]}
                   onExited={[Function]}
                   onExiting={[Function]}
-                  timeout={5000}
+                  timeout={15000}
                   unmountOnExit={false}
                 >
                   <div
@@ -145,11 +145,12 @@ exports[`match on Shallow mode 1`] = `
                               className="temperature elevation-2 text_color_dark"
                             >
                               <Spinner
+                                animating={true}
                                 animationDuration={0.6}
                                 speed={1}
                               >
                                 <div
-                                  className="rai-activity-indicator"
+                                  className="rai-activity-indicator undefined"
                                   style={
                                     Object {
                                       "display": "inline-block",
@@ -159,10 +160,8 @@ exports[`match on Shallow mode 1`] = `
                                   }
                                 >
                                   <Spinner
-                                    animationDuration={0.6}
                                     getBorderStyle={[Function]}
                                     getFillStyle={[Function]}
-                                    speed={1}
                                     style={
                                       Object {
                                         "animationDuration": "0.6s",
@@ -210,7 +209,7 @@ exports[`match on Shallow mode 1`] = `
                               <div
                                 className="col-7 col-md-8"
                               >
-                                06/11/2017 15:14
+                                06/12/2017 15:14:58
                               </div>
                               <div
                                 className="col-5 col-md-4 text-right"
@@ -243,7 +242,7 @@ exports[`match on Shallow mode 1`] = `
                 classNames="city"
                 in={true}
                 onExited={[Function]}
-                timeout={5000}
+                timeout={15000}
               >
                 <Transition
                   appear={true}
@@ -257,7 +256,7 @@ exports[`match on Shallow mode 1`] = `
                   onExit={[Function]}
                   onExited={[Function]}
                   onExiting={[Function]}
-                  timeout={5000}
+                  timeout={15000}
                   unmountOnExit={false}
                 >
                   <div
@@ -291,11 +290,12 @@ exports[`match on Shallow mode 1`] = `
                               className="temperature elevation-2 text_color_dark"
                             >
                               <Spinner
+                                animating={true}
                                 animationDuration={0.6}
                                 speed={1}
                               >
                                 <div
-                                  className="rai-activity-indicator"
+                                  className="rai-activity-indicator undefined"
                                   style={
                                     Object {
                                       "display": "inline-block",
@@ -305,10 +305,8 @@ exports[`match on Shallow mode 1`] = `
                                   }
                                 >
                                   <Spinner
-                                    animationDuration={0.6}
                                     getBorderStyle={[Function]}
                                     getFillStyle={[Function]}
-                                    speed={1}
                                     style={
                                       Object {
                                         "animationDuration": "0.6s",
@@ -356,7 +354,7 @@ exports[`match on Shallow mode 1`] = `
                               <div
                                 className="col-7 col-md-8"
                               >
-                                07/11/2017 15:14
+                                07/12/2017 15:14:58
                               </div>
                               <div
                                 className="col-5 col-md-4 text-right"
@@ -389,7 +387,7 @@ exports[`match on Shallow mode 1`] = `
                 classNames="city"
                 in={true}
                 onExited={[Function]}
-                timeout={5000}
+                timeout={15000}
               >
                 <Transition
                   appear={true}
@@ -403,7 +401,7 @@ exports[`match on Shallow mode 1`] = `
                   onExit={[Function]}
                   onExited={[Function]}
                   onExiting={[Function]}
-                  timeout={5000}
+                  timeout={15000}
                   unmountOnExit={false}
                 >
                   <div
@@ -437,11 +435,12 @@ exports[`match on Shallow mode 1`] = `
                               className="temperature elevation-2 text_color_dark"
                             >
                               <Spinner
+                                animating={true}
                                 animationDuration={0.6}
                                 speed={1}
                               >
                                 <div
-                                  className="rai-activity-indicator"
+                                  className="rai-activity-indicator undefined"
                                   style={
                                     Object {
                                       "display": "inline-block",
@@ -451,10 +450,8 @@ exports[`match on Shallow mode 1`] = `
                                   }
                                 >
                                   <Spinner
-                                    animationDuration={0.6}
                                     getBorderStyle={[Function]}
                                     getFillStyle={[Function]}
-                                    speed={1}
                                     style={
                                       Object {
                                         "animationDuration": "0.6s",
@@ -502,7 +499,7 @@ exports[`match on Shallow mode 1`] = `
                               <div
                                 className="col-7 col-md-8"
                               >
-                                08/11/2017 15:14
+                                08/12/2017 15:14:58
                               </div>
                               <div
                                 className="col-5 col-md-4 text-right"
@@ -535,7 +532,7 @@ exports[`match on Shallow mode 1`] = `
                 classNames="city"
                 in={true}
                 onExited={[Function]}
-                timeout={5000}
+                timeout={15000}
               >
                 <Transition
                   appear={true}
@@ -549,7 +546,7 @@ exports[`match on Shallow mode 1`] = `
                   onExit={[Function]}
                   onExited={[Function]}
                   onExiting={[Function]}
-                  timeout={5000}
+                  timeout={15000}
                   unmountOnExit={false}
                 >
                   <div
@@ -583,11 +580,12 @@ exports[`match on Shallow mode 1`] = `
                               className="temperature elevation-2 text_color_dark"
                             >
                               <Spinner
+                                animating={true}
                                 animationDuration={0.6}
                                 speed={1}
                               >
                                 <div
-                                  className="rai-activity-indicator"
+                                  className="rai-activity-indicator undefined"
                                   style={
                                     Object {
                                       "display": "inline-block",
@@ -597,10 +595,8 @@ exports[`match on Shallow mode 1`] = `
                                   }
                                 >
                                   <Spinner
-                                    animationDuration={0.6}
                                     getBorderStyle={[Function]}
                                     getFillStyle={[Function]}
-                                    speed={1}
                                     style={
                                       Object {
                                         "animationDuration": "0.6s",
@@ -648,7 +644,7 @@ exports[`match on Shallow mode 1`] = `
                               <div
                                 className="col-7 col-md-8"
                               >
-                                09/11/2017 15:14
+                                09/12/2017 15:14:58
                               </div>
                               <div
                                 className="col-5 col-md-4 text-right"
