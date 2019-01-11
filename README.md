@@ -10,6 +10,8 @@ Flow coverage report (99%): https://luispuig.com/altran/flow/
 
 > If you want to see a mobile project for Android & iOS with React Native, check https://github.com/luispuig/news-reader/
 
+![](showcase.gif)
+
 ## You will find...
 
 - Website with ReactJS
